@@ -298,7 +298,7 @@ $(document).ready(function () {
 
     $("#distance-filter").on("click", function () {
         event.preventDefault();
-        map.locate;
+        map.locate();
         map.on('locationfound', filterByDistance);
         map.on('locationerror', onLocationError);
         
